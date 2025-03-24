@@ -1,0 +1,68 @@
+#cabecera{
+  --s: 80px; /* control the size*/
+  --c1: #542437;
+  --c2: #c02942;
+  --_g: 
+    #0000 calc(-650%/13) calc(50%/13),var(--c1) 0 calc(100%/13),
+    #0000 0 calc(150%/13),var(--c1) 0 calc(200%/13),
+    #0000 0 calc(250%/13),var(--c1) 0 calc(300%/13);
+  --_g0: repeating-linear-gradient( 45deg,var(--_g));
+  --_g1: repeating-linear-gradient(-45deg,var(--_g));
+  background:
+    var(--_g0),var(--_g0) var(--s) var(--s),
+    var(--_g1),var(--_g1) var(--s) var(--s) var(--c2);
+  background-size: calc(2*var(--s)) calc(2*var(--s));
+  font-size:25px;
+  padding:5px;
+  color:white;
+}
+
+.enlace{
+color:#c02942;
+text-decoration:none;
+display:inline-block;
+list-style-type:none;
+}
+
+.mn{
+color:white;
+margin:10px 0px 10px 0px;
+padding:10px;
+text-decoration:none;
+display:inline-block;
+list-style-type:none;
+}
+
+.foto{
+margin:10px 10px 10px 10px;
+
+}
+
+
+
+a:hover{
+color:#542437;
+}
+
+#nav{
+background:#c02942;
+font-size:25px;
+margin:10px 0px 10px 0px
+}
+
+#contenido{
+padding:10px;
+border:2px solid #c02942;
+-moz-border-radius:30px;
+-webkit-border-radius:30px;
+font-size:23px;
+margin:10px 40px 10px 40px
+}
+
+#pie{
+color:white;
+padding:10px;
+background:#c02942;
+font-size:19px;
+margin:10px 0px 10px 0px
+}

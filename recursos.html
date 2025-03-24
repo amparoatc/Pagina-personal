@@ -4,26 +4,44 @@
 	<title>Mi página web</title>
 	<meta name="description" content="Página personal">
 	<meta charset="utf-8">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Libre+Caslon+Display&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Serif+Hentaigana:wght@500&family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&family=Roboto:ital,wght@0,100..900;1,100..900&family=Smooch+Sans:wght@100..900&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="páginapersonal.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<style>
+		
+		/* Small devices (phones, 992px and down) */
+		@media screen and (max-width: 992px){
+			.row{ display:flex; flex-direction:column; width:100%;}
+			.mn{text-align:center; width:100%;}
+		}
+		/* Large devices (large laptops and destoks, 992px and up) */
+		@media screen and (min-width: 992px){
+			.row{display:flex; flex-direction: row; width:100%;}
+			.mn{text-align:center; width:50%;}
+		}
+	</style>
+	
 </head>
 
 <body>
-	<div align="center">
+	<div id="cabecera" align="center">
 		<h1>Web personal de Amparo</h1>
 	</div>
-	<div align="center">
-		<a href="index.html"> Home </a>
+	<div id="nav" class="row">
+		<a class="mn" href="index.html"> Inicio </a>
+		<a class="mn" href="https://www.google.com/" target="_blanket"> Google</a>
 	</div>
-	<div>
-		<h3>Un pequeño listado de recursos de mi interes  ⭐</h3>
+	<div id="contenido">
+		<h3>Un pequeño listado de recursos</h3>
 		<ul>
-			<li><a href= "https://www.cdclaret.com/voley/" target="_blanket">Claret voleibol: Mi deporte</a></li>
-			<li><a href="https://es.pinterest.com/" target="_blanket"> De donde me inspiro: Pinterest</a></li>
-			<li><a href="https://www.upo.es/portal/impe/web/portada/index.html" target="_blanket">A donde quiero llegar: UPO (Universidad de Pablo Olavide)</a></li>
+			<li><a class="enlace" href="https://www.rfevb.com/" target="_blanket">RFEVB</a></li>
+			<li><a class="enlace" href="http://www.iesfernandodeherrera.es/" target="_blanket">IES Fernando de Herrera</a></li>
+			<li><a class="enlace" href="https://www.upo.es/portal/impe/web/portada/index.html" target="_blanket">UPO (Universidad de Pablo Olavide)</a></li>
 		</ul>
-		<br>
 	</div>
-	<div>
-		<hr>
+	<div id="pie">
 		<p>Copyright: Amparo. 2024</p>
 	</div>
 </body>
